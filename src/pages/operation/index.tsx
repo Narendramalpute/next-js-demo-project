@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Layout from "../../layout/Layout";
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
+import { RootState } from '../../redux/store';
 import addValue from "../../redux/slices/counter";
 
 const index = () => {
-  const [count, setCount] = useState<any>(0);
-  // const dispatch = useDispatch();
+  // const [count, setCount] = useState<any>(0);
+  const count = useSelector((state: RootState) => state.Counter);
+   const dispatch = useDispatch();
   const handleAdd = () => {
-    // dispatch(addValue(count + 1));
-    setCount(count + 1);
+   dispatch(addValue(count + 1));
+    // setCount(count + 1);
   };
 
   const handleSub = () => {
-   // dispatch(addValue(count - 1));
-    setCount(count - 1);
+    dispatch(addValue(count - 1));
+    // setCount(count - 1);
   };
 
   const Container = styled.div`

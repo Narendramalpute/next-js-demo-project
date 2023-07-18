@@ -7,7 +7,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import styled from "@emotion/styled";
-import Layout from "../layout/Layout";
+import Layout from "../../layout/Layout";
 
 const About = () => {
   useEffect(() => {

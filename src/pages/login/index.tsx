@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Layout from '../layout/Layout';
+import Layout from '../../layout/Layout';
 import styled from 'styled-components';
 import { useRouter } from 'next/router'
 

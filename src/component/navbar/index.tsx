@@ -8,7 +8,7 @@ interface Navlink {
 }
 
 const navLinks: Navlink[] = [
-  { label: "About", url: "/service" },
+  { label: "Operation", url: "/operation" },
   { label: "login", url: "/login" },
   { label: "product", url: "/product" }
 ];

@@ -1,16 +1,17 @@
-import React from 'react'
-import Navbar from '../component/navbar';
-
-const Layout = ({children}:any) => {
+import React from "react";
+import Navbar from "../component/navbar";
+import { Provider } from "react-redux";
+import store from "../redux/store";
+const Layout = ({ children }: any) => {
   return (
     <>
-        <Navbar/>
+      <Provider store={store}>
+        <Navbar />
 
-        { children}
-
-        
+        {children}
+      </Provider>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

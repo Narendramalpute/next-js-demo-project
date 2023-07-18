@@ -2,7 +2,7 @@ import axios from "axios";
 import styled from "@emotion/styled";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Layout from "../../layout/Layout";
+import Layout from "../../../layout/Layout";
 export default function product() {
   const [list, setList] = useState<any>([]);
   const router = useRouter();
